@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP_Météo</title>
+    <script src="js/all.min.js"></script>
+    <script src="js/moment.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;471&family=Festive&family=Lobster&family=Open+Sans:wght@300;400;700&family=Poppins:wght@100;200;300;400;500;600;700&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-section">
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" name="search-city" id="search-input" placeholder="Recherchez ville">
+            </div>
+        </div>
+        <div class="info-wrapper">
+            <p class="city-name">--</p>
+            <p class="weather-state">--</p>
+            <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon" class="weather-icon">
+            <p class="temperature">--</p>
+            <div class="note">
+                <div class="note-icon"><i class="fa-solid fa-temperature-half"></i></div>
+                <div class="note-detail">
+                    <div><p class="feel-like"></p></div>
+                    <div><p>Feels like</p></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="additional-section">
+            <div class="row">
+                <div class="item">
+                    <div class="label">Sunrise</div>
+                    <div class="value sunrise">--</div>
+                </div>
+                <div class="item">
+                    <div class="label">Sunset</div>
+                    <div class="value sunset">--</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item">
+                    <div class="label">Humidity</div>
+                    <div class="value"><span class="humidity">--</span>%</div>
+                </div>
+                <div class="item">
+                    <div class="label">Wind</div>
+                    <div class="value"><span class="wind-speed">--</span> km/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/meteo.js"></script>
+     
+    
+    
+</body>
+</html>
